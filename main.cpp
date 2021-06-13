@@ -1,7 +1,9 @@
 #include <iostream>
 
+#include "./core/component/include/BasicComponent.h"
+
 int main()
 {
-    std::cout<<"Hello, World!"<<std::endl;
+    BasicComponent component;
     return 0;
 }

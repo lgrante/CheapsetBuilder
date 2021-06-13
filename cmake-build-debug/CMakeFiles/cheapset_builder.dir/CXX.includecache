@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/louisgrante/Code/CheapsetBuilder/core/builder/include/ComponentBuilder.h
+
+/Users/louisgrante/Code/CheapsetBuilder/core/builder/src/ComponentBuilder.cpp
+../include/ComponentBuilder.h
+/Users/louisgrante/Code/CheapsetBuilder/core/builder/include/ComponentBuilder.h
+
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/BasicComponent.h
+Component.h
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/Component.h
+
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/BuiltComponent.h
+Component.h
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/Component.h
+
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/Component.h
+./interface/IComponent.h
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/interface/IComponent.h
+
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/interface/IComponent.h
+string
+-
+
+/Users/louisgrante/Code/CheapsetBuilder/core/component/src/BasicComponent.cpp
+../include/BasicComponent.h
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/BasicComponent.h
+
+/Users/louisgrante/Code/CheapsetBuilder/core/component/src/BuiltComponent.cpp
+../include/BuiltComponent.h
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/BuiltComponent.h
+
+/Users/louisgrante/Code/CheapsetBuilder/main.cpp
+iostream
+-
+./core/component/include/BasicComponent.h
+/Users/louisgrante/Code/CheapsetBuilder/core/component/include/BasicComponent.h
+

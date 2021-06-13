@@ -37,13 +37,17 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="CheapsetBuilder">
-				<Option output="/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/CheapsetBuilder" prefix_auto="0" extension_auto="0"/>
+			<Target title="cheapset_builder">
+				<Option output="/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/cheapset_builder" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/louisgrante/Code/CheapsetBuilder/./core/builder/include/interface"/>
+					<Add directory="/Users/louisgrante/Code/CheapsetBuilder/./core/builder/include"/>
+					<Add directory="/Users/louisgrante/Code/CheapsetBuilder/./core/component/include"/>
+					<Add directory="/Users/louisgrante/Code/CheapsetBuilder/./core/component/include/interface"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
@@ -52,19 +56,23 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 CheapsetBuilder"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 cheapset_builder"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="CheapsetBuilder/fast">
-				<Option output="/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/CheapsetBuilder" prefix_auto="0" extension_auto="0"/>
+			<Target title="cheapset_builder/fast">
+				<Option output="/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/cheapset_builder" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/louisgrante/Code/CheapsetBuilder/./core/builder/include/interface"/>
+					<Add directory="/Users/louisgrante/Code/CheapsetBuilder/./core/builder/include"/>
+					<Add directory="/Users/louisgrante/Code/CheapsetBuilder/./core/component/include"/>
+					<Add directory="/Users/louisgrante/Code/CheapsetBuilder/./core/component/include/interface"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
@@ -73,7 +81,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 CheapsetBuilder/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 cheapset_builder/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/louisgrante/Code/CheapsetBuilder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,49 +89,34 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/include/ComponentBuilder.h">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
-		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/include/builders/ComponentInputsBuilder.h">
-			<Option target="CheapsetBuilder"/>
-		</Unit>
-		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/include/builders/ComponentLinksBuilder.h">
-			<Option target="CheapsetBuilder"/>
-		</Unit>
-		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/include/builders/ComponentOutputsBuilder.h">
-			<Option target="CheapsetBuilder"/>
+		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/include/interface/IComponentBuilder.h">
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/src/ComponentBuilder.cpp">
-			<Option target="CheapsetBuilder"/>
-		</Unit>
-		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/src/builders/ComponentInputsBuilder.cpp">
-			<Option target="CheapsetBuilder"/>
-		</Unit>
-		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/src/builders/ComponentLinksBuilder.cpp">
-			<Option target="CheapsetBuilder"/>
-		</Unit>
-		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/builder/src/builders/ComponentOutputsBuilder.cpp">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/component/include/BasicComponent.h">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/component/include/BuiltComponent.h">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/component/include/Component.h">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/component/include/interface/IComponent.h">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/component/src/BasicComponent.cpp">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/core/component/src/BuiltComponent.cpp">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/main.cpp">
-			<Option target="CheapsetBuilder"/>
+			<Option target="cheapset_builder"/>
 		</Unit>
 		<Unit filename="/Users/louisgrante/Code/CheapsetBuilder/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
